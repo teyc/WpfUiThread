@@ -1,0 +1,19 @@
+﻿<Page x:Class="WpfUiThread.Pages.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="255" d:DesignWidth="504"
+	Title="Page1">
+
+    <Grid>
+        <Button Content="Update Address (Freeze)" x:Name="UpdateFreezeButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="145" Margin="5,1,0,0" Height="94" Click="UpdateFreezeButton_Click"/>
+        <Button Content="Update Address (Thread)" x:Name="UpdateThreadButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="145" Margin="155,1,0,0" Height="94" Click="UpdateThreadButton_Click" />
+        <Button Content="Update Address (Crash)" x:Name="UpdateCrashButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="145" Margin="5,100,0,0" Height="97" Click="UpdateCrashButton_Click" />
+        <Button Content="Update Address (Crash fix)" x:Name="UpdateNoCrashButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="145" Margin="155,100,0,0" Height="97" Click="UpdateNoCrashButton_Click"  />
+        
+        <Button Content="Test List Binding" x:Name="NavigatePage2Button" Click="NavigatePage2Button_Click" HorizontalAlignment="Left" Height="75" Margin="366,49,0,0" VerticalAlignment="Top" Width="86"/>
+
+    </Grid>
+</Page>
